@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-let txtCol = "#fff";
 let defStyle = {
-  color: txtCol
+  color: "#fff"
 }
 class Agregate extends Component {
   render() {
@@ -14,6 +13,7 @@ class Agregate extends Component {
     );
   }
 }
+
 class Filter extends Component {
   render() {
     return (
@@ -43,11 +43,12 @@ class Playlist extends Component {
     );
   }
 }
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Testing React</h1>
+        <h1 style={{...defStyle, "font-size": "4em"}}>Testing React</h1>
         <Agregate/>
         <Agregate/>
         <Filter/>
@@ -60,6 +61,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;
